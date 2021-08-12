@@ -23,7 +23,7 @@ const Header = () => {
             <header
                 css={css`
                     background-color: #035397;
-                    padding: 1rem;
+                    /* padding: .5rem; */
                 `}
             >
                 <div
@@ -45,7 +45,14 @@ const Header = () => {
                 >
                     <Link to="/">
                         {/* <img src={logo.publicURL} alt="Logotipo bienes raices" /> */}
-                        <StaticImage src="../images/logo.svg" alt="Logotipo bienes raices" fadein="soft"/>
+                        <StaticImage 
+                            src="../images/logo.svg" 
+                            alt="Logotipo bienes raices" 
+                            fadein="soft"
+                            layout="fixed"
+                            width={400}
+                            height={150}
+                        />
                     </Link>
 
                     <Navegacion />

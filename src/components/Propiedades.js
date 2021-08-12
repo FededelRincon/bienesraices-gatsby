@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Iconos from './Iconos';
 import Layout from './Layout';
 import { graphql } from 'gatsby';
+
 
 
 const Contenido = styled.div`
@@ -21,12 +23,12 @@ const Contenido = styled.div`
 const SideBar = styled.aside`
     .precio {
         font-size: 2rem;
-        color: #75AB00;
+        color: #035397;
     }
     .agente {
         margin-top: 4rem;
         border-radius: 2rem;
-        background-color: #75ab00;
+        background-color: #e4b85b;
         padding: 3rem;
         color: #FFF;
 
@@ -71,7 +73,11 @@ const Propiedades = ({ data }) => {
     return (
         <>
             <Layout>
-                <h1>{nombre}</h1>
+                <h1
+                    css={css`
+                        margin: 4rem;
+                    `}
+                >{nombre}</h1>
                 <Contenido>
                     <main>
                         <GatsbyImage 
@@ -94,7 +100,7 @@ const Propiedades = ({ data }) => {
                         />
 
                         <div className="agente">
-                            <h2>Vendedor:</h2>
+                            <h2>Vendedor</h2>
                             <p>{agentes.nombre}</p>
                             <p>Tel: { agentes.telefono}</p>
                             <p>Email: {agentes.email}</p>

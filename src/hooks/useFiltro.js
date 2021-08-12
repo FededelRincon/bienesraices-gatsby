@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
+
 
 
 const Formulario = styled.form`
@@ -42,8 +44,12 @@ const useFiltro = () => {
             <Select
                 onChange={ e => guardarCategoria(e.target.value) }
                 value={ categoria }
+                css={css`
+                    width: 400px; 
+                    text-align-last:center;
+                `}
             >
-                <option value="">-- Filtrado --</option>
+                <option value="">-- Filtre segun su preferencia --</option>
                 {
                     categorias.map(opcion => (
                         <option 

@@ -16,8 +16,8 @@ const ImagenBackground = styled(BackGroundImage)`
 
 const Index = () => {
     const inicio = useInicio();
-    const { nombre, contenido, imagen } = inicio[0];
-    // console.log(imagen)
+    const { contenido, imagen } = inicio[0];
+    // const { nombre, contenido, imagen } = inicio[0];
 
     return (
         <>
@@ -39,10 +39,11 @@ const Index = () => {
                     <div
                         css={css`
                             max-width: 800px;
-                            margin: 0 auto;
+                            margin: 2rem auto;
                             `}
                     >
-                        <h1> { nombre } </h1>
+                        {/* <h1>{nombre}</h1> */}
+                        <h1> Vendemos su propiedad en promedio de 90 dias </h1>
                         <p css={css`
                             text-align: center;
                             `}> { contenido } </p>

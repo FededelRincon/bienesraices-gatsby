@@ -6,8 +6,10 @@
 </p>
 
 <h1 align="center">
-  Bienes Raices - (gatsby + strapi)
+  Bienes Raices
 </h1>
+
+The project was build with Gatsby and cms strapi
 
 site: 
     https://bienesraices-gatsby-fdr.netlify.app/

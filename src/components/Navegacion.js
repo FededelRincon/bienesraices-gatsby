@@ -36,7 +36,7 @@ const Navegacion = () => {
             <Nav>
                 <NavLink activeClassName="pagina-actual" to="/">Inicio</NavLink>
                 <NavLink activeClassName="pagina-actual" to="/nosotros">Nosotros</NavLink>
-                <NavLink activeClassName="pagina-actual" to="/propiedades">Propiedades</NavLink>
+                {/* <NavLink activeClassName="pagina-actual" to="/propiedades">Propiedades</NavLink> */}
             </Nav>
         </>
     );

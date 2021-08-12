@@ -4,12 +4,15 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from './Layout';
 import { graphql } from 'gatsby';
 import ListadoPropiedades from './ListadoPropiedades';
+import { css } from '@emotion/react';
+
 
 
 const ContenidoPagina = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     width: 95%;
+    margin-bottom: 3rem;
 
     @media (min-width: 768px) {
         display: grid;
@@ -52,7 +55,11 @@ const Propiedades = ({ data }) => {
             <Layout>
                 <main className="contenedor">
             
-                    <h1>{nombre}</h1>
+                    <h1
+                        css={css`
+                            margin: 4rem;
+                        `}
+                    >{nombre}</h1>
                     
                     <ContenidoPagina>
                         <GatsbyImage 
@@ -64,7 +71,11 @@ const Propiedades = ({ data }) => {
                             // height={20}
                             />
 
-                        <p>{contenido}</p>
+                        <p
+                            css={css`
+                                text-align: justify;
+                            `}
+                        >{contenido}</p>
 
                     </ContenidoPagina>
 

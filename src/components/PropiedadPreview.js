@@ -9,7 +9,7 @@ import urlSlug from 'url-slug';
 const Boton = styled(Link)`
     margin-top: 2rem;
     padding: 1rem;
-    background-color: #75ab00;
+    background-color: #e4b85b;
     width: 100%;
     color: #FFF;
     display: block;
@@ -21,7 +21,7 @@ const Boton = styled(Link)`
 
 
 const Card = styled.div`
-    /* border: 2px solid #75ab00; */
+    /* border: 2px solid #e4b85b; */
     border: 2px solid #bbbbbb;
     /* border-radius: 15px; */
     border-radius: 2rem;
@@ -30,6 +30,11 @@ const Card = styled.div`
 
     img {
         max-width: 100%;
+    }
+
+    img:first-child {
+        min-height: 40rem;
+        /* color: lime; */
     }
 `;
 
@@ -43,7 +48,7 @@ const Contenido = styled.div`
 
     .precio {
         font-size: 2rem;
-        color: #75AB00;
+        color: #035397;
 
     }
     .centrado {
@@ -76,7 +81,9 @@ const PropiedadPreview = ({ propiedad }) => {
                     <GatsbyImage 
                         image={getImage(imagen.localFile.childImageSharp.gatsbyImageData)} 
                         layout="fixed"
-                        alt="propiedades" 
+                        alt="propiedades"
+                        width={400}
+                        height={150}
                     />
                 </Link>
                 

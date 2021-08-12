@@ -27,7 +27,7 @@ const ListadoPropiedades = () => {
         
     }, [ categoria, propiedades ])
 
-    console.log(categoria)
+    // console.log(categoria)
     return (
         <>
             <h2

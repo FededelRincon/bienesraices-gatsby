@@ -1,5 +1,5 @@
 .imagenbg {
-    color: #FFF;
+    color: #e4b85b;
     height: 100%;
     max-width: 1200px;
     display: flex;
@@ -9,13 +9,17 @@
     align-items: center;
 }
 .titulo {
+    
     font-size: 2rem;
     margin: 0;
     max-width: 800px;
+    text-shadow: 1px 1px 2px black;
 }
 
 @media (min-width: 992px) {
     .titulo {
+        font-weight: 700;
+        text-shadow: 1px 1px 2px black;
         font-size: 4rem;
     }
 }

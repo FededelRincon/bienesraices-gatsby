@@ -29,7 +29,7 @@ const Iconos = ({ wc, estacionamiento, habitaciones }) => {
                         src="../images/iconos/icono_wc.svg" 
                         alt="ico_bathroom" 
                         layout="fixed"
-                        width={30}
+                        // width={30}
                         // height={100}
                     />
                     <p>{ wc }</p> 
